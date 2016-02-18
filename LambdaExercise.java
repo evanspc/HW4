@@ -1,8 +1,8 @@
 package cp120a.evanspc.hw4;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.lang.StringBuilder;
+import java.util.*;
+//import java.util.Collections;
+//import java.util.Comparator;
+//import java.lang.StringBuilder;
 
 import com.sun.org.apache.xpath.internal.functions.Function;
 
@@ -64,8 +64,8 @@ public class LambdaExercise {
 		 */
 		//feeble attempt to get some points
 		Arrays.sort(planets, (first, second) -> first.compareTo(second));
-		//		System.out.println(Arrays.toString(planets));
-		//		System.out.println("");
+				System.out.println(Arrays.toString(planets));
+				System.out.println("");
 
 		// lambda expression, reverse the name, then sort in descending order
 		System.out.println("Sorted in dictionary order of the reversed name (descending)");
