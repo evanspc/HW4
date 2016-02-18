@@ -56,12 +56,11 @@ public class LambdaExercise {
 
 
 
-		System.out.println("Sorted in dictionary order of the reversed name (ascending)");
-		/*
-		 * I thought something like the following might work, but it won't compile
-		Arrays.sort(planets, (first, second) -> 
-		(java.lang.StringBuilder(first).reverse().toString).compareTo((second).reverse().toString));
-		 */
+		System.out.println("IN CLASS Sorted in dictionary order of the reversed name (ascending)");
+		
+		 //GIVEN IN CLASS
+		Arrays.sort(planets, (first, second) -> new StringBuilder(second).reverse().toString().compareTo(new StringBuilder(first).reverse().toString()));
+		
 		//feeble attempt to get some points
 		Arrays.sort(planets, (first, second) -> first.compareTo(second));
 				System.out.println(Arrays.toString(planets));
